@@ -1,0 +1,394 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+    border: none;
+    max-width: 100%;
+    width: 100%;
+    
+}
+.container-fluid{
+    width: 85% !important;
+}
+:focus{
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6, ul, li, ol, p, .navbar{
+    margin: 0;
+    padding: 0;
+}
+
+.ptb-100{
+    padding: 100px 0;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.ptb-50{
+    padding: 50px 0;
+}
+.pt-100{
+    padding-top: 100px;
+}
+
+.section_heading{
+    font-size: 50px;
+    font-weight: 700;
+    color: #404040;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 55px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section_heading::after{
+    content: '';
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    background: #d9d9d9;
+}
+.section_description{
+    font-size: 18px;
+    line-height: 28px;
+    color: #5d5d5d;
+    font-weight: 400;
+}
+.little_description{
+    font-size: 16px;
+    line-height: 27px;
+    color: #73879c;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00bc9c;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border-bottom: 3px solid #00a085;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: #00a085;
+    border-bottom: 3px solid #148e76;
+    color: #ffffff;
+}
+
+/* ============================== Header Section ========================== */
+.header_section{
+    background: url('../img/header-bg.jpg')  no-repeat center top / cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* ---------------- Navigation design ---------------- */
+.header_section nav{
+    padding-top: 20px;
+}
+.header_section nav .navbar-brand{
+    width: 220px;
+}
+.header_section nav .navbar-nav{
+    display: flex;
+    flex-direction: row;
+}
+.header_section nav .navbar-nav li .nav-link:hover,
+.header_section nav .navbar-nav li .nav-link{
+    color: #fff;
+    padding: 0 18px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+.header_section nav .navbar-nav li:first-child .nav-link{
+    border-right:1px solid #84888f;
+}
+.header_section nav .navbar-nav li:last-child .nav-link{
+    padding: 0 0 !important;
+    font-size: 18px;
+    color: #84888f;
+}
+.scroll-bar{
+    position: absolute;
+    width: 50px;
+    bottom: 50px;
+    left: 49%;
+}
+
+/* ------------ Hero area --------------- */
+
+.hero_area .hero_content{
+    width: 70%;
+    margin: 0 auto;
+    padding: 190px 0;
+    text-align: center;
+}
+.hero_area .hero_content h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hero_area .hero_content h2{
+    font-size: 55px;
+    font-weight: 500;
+    color: #ed322d;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.hero_area .hero_content p{
+    color: #a8a8a8;
+    font-size: 17px;
+    line-height: 26px;
+    display: inline-block;
+    font-weight: 400;
+    width: 399px;
+    margin: 30px auto;
+}
+
+/* ======================== Header End ============================ */
+.about_section .col-lg-6,
+.about_section .col-md-6,
+.about_section .col{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.about_section .section_heading::before{
+    content: '';
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    background: #d9d9d9;
+}
+.about_section .section_heading::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+}
+.about_section img{
+    width: auto;
+    height: 100%;
+}
+.about_section .right_content{
+    padding: 47px 45px;
+    background: #f8f8f8;
+}
+.about_section .right_content .video_text{
+    display: flex;
+    padding-top: 30px;
+}
+
+.about_section .right_content .video_text a{
+    display: inline-block;
+    margin-right: 25px;
+}
+.about_section .right_content .video_text iframe{
+    width: 200px;
+    height: 110px;
+}
+/* ======================== About End ============================ */
+.process_section .process_img{
+    width: 95%;
+    margin: 50px auto;
+}
+.process_section .process_title{
+    color: #5d5d5d;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+/* ========================== Process End ============================ */
+
+.services_section{
+    background: url('../img/bg-3.jpg') no-repeat center top / cover;
+}
+.services_section .section_description,
+.services_section .section_heading{
+    color: #fff;
+    padding-bottom: 25px;
+}
+.services_section .col-md-4,
+.services_section .col-lg-4,
+.services_section .col-md-6,
+.services_section .col-12{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.services_section .content_1{
+    background: #7a225d;
+}
+.services_section .content_2{
+    background: #480048;
+}
+.services_section .content_3{
+    background: #300030;
+}
+.services_section .card{
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+.services_section .card .icon{
+    width: 160px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.09);
+    color: #9a417c;
+    font-size: 30px;
+}
+.services_section .card .content{
+    width: 100%;
+    height: 150px;
+    background: transparent;
+    padding: 32px 20px;
+}
+.services_section .card .content h4{
+    font-size: 25px;
+    font-weight: 400;
+    color: #eaafd6;
+    margin-bottom: 5px;
+}
+.services_section .card .content p{
+    color: #c39fb7;
+    font-size: 14px;
+    line-height: 24px;
+}
+/* ========================== Services End ============================ */
+
+.contact_section{
+    background: url('../img/bg-2.jpg') no-repeat center top / cover;
+}
+.contact_section .section_description{
+    color: #000;
+}
+.contact_section .section_heading{
+    padding-bottom:30px;
+}
+.contact_section .contact_form{
+    background: #fff;
+    border-bottom: 2px solid #dfdfdf;
+}
+.contact_section .contact_form form{
+    width: 60%;
+    display: inline-block;
+    margin: 50px auto;
+}
+.contact_section .contact_form form input,
+.contact_section .contact_form form textarea{
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    padding: 8px 8px;
+    margin: 25px;
+}
+.contact_section ::placeholder{
+    color: #7c7c7c;
+}
+
+.contact_section .contact_form form textarea{
+    width: 100%;
+    height: 43px;
+    resize: vertical;
+}
+
+.contact_section .contact_form form input[type="submit"]{
+    width: auto;
+    padding: 10px 50px;
+    color: #3c3c3c;
+    border: 2px solid #878787;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+.contact_section .contact_form form input[type="submit"]:hover{
+    color: #fff;
+    background: #3c3c3c;
+    border: 2px solid #3c3c3c;
+}
+
+.contact_section .contact_form form input[type="text"]:focus,
+.contact_section .contact_form form input[type="email"]:focus,
+.contact_section .contact_form form input[type="tel"]:focus,
+.contact_section .contact_form form textarea:focus{
+    border-bottom: 1px solid #878787;
+}
+/* ========================== Contact End ============================ */
+
+.footer_section .footer_content{
+    text-align: center;
+    margin: 70px 0;
+}
+.footer_section .footer_content ul li{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.footer_section .footer_content ul li a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #acacac;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: center;
+    color: #8a8a8a;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+.footer_section .footer_content ul li a:hover{
+    transform: rotate(45deg);
+    color: #300030;
+}
+.footer_section .footer_content p{
+    color: #c2c2c2;
+    display: block;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.footer_section .footer_content h4{
+    font-size: 22px;
+    color: #a4a4a4;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+.footer_section .footer_content h4 a{
+    color: #db2e2e;
+    font-weight: 500;
+}
+
+
+
+
